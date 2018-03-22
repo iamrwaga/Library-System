@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <title>Enter Login Details</title>
+    <title>View All Books</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script>
+         function myFunction() {
+             var x = document.getElementById("myTopnav");
+             if (x.className === "topnav") {
+                 x.className += " responsive";
+             } else {
+                 x.className = "topnav";
+             }
+         }
+         </script>
+ <style>
+     body {font-family: Arial, Helvetica, sans-serif;}
+ .resize {
+     width: 200px;
+     height: 120px;
+ }
+ 
+ /* resize images */
+ .resize img {
+     width: 100%;
+     height: auto;
+     padding: 25px;
+     margin: 10px;
+ 
+ }    
+ .topnav {
+   overflow: hidden;
+   background-color:#F05837;
+ }
+ .splash {
+   background-color: #F3E96B;
+ }
+ 
+ .topnav a {
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ 
+ .topnav a:hover {
+   background-color: #F3E96B;
+   color: #6975A6;
+ }
+ 
+ .active {
+   background-color: #6465A5;
+   color: black;
+ }
+ 
+ .topnav .icon {
+   display: none;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .topnav a:not(:first-child) {display: none;}
+   .topnav a.icon {
+     float: right;
+     display: block;
+   }
+ }
+ 
+ @media screen and (max-width: 767px) {
+   .topnav.responsive {position: relative;}
+   .topnav.responsive .icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+   }
+   .topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: left;
+   }
+   .sidenav {
+         height: auto;
+         padding: 15px;
+       }
+  .row.content {height:auto;} 
+ }
+ .row.content {height: 450px}
+ .sidenav {
+       padding-top: 20px;
+       background-color: #f1f1f1;
+       height: 100%;
+     }
+ footer {
+       background-color:#6465A5;
+       color: #F28A30;
+       padding: 15px;
+     }
+ </style>
+ </head>
+ <body>
+     <div class="topnav" id="myTopnav">
+         <a href="#home" class="active">Home</a>
+         <a href="#news">View Books</a>
+         <a href="#contact">Borrow book</a>
+         <a href="#about">About</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+     </div>
+     <div class="container-fluid text-center">    
+         <div class="row content">
+           <div class="col-sm-2 sidenav"><!--add a search field and output diplay-->
+            <input type="text" placeholder="Search..">
+             <p><a href="#">Link</a></p>
+             <p><a href="#">Link</a></p>
+             <p><a href="#">Link</a></p>
+             <h1>Categories</h1>
+             </br>
+             <div class="container">
+                 <div class="row">
+                  <div class="col-sm-3 resize"><img src="img/biography.png"/></div>
+                  <div class="col-sm-3 resize"><img src="img/fantasy.png"/></div>
+                  <div class="col-sm-3 resize"><img src="img/graphic-novel.jpg"/></div>
+                  <div class="col-sm-3 resize"><img src="img/historical-fiction.jpg"/></div>
+                  <div class="col-sm-3 resize">
+                    <a href="#"><img src="img/biography.png"/></a>
+                    <h3>Biography</h3>
+                  </div>
+                  <div class="col-sm-3 resize">
+                    <a href="#"><img src="img/fantasy.png"/></a>
+                    <h3>Fantasy</h3></div>
+                  <div class="col-sm-3 resize">
+                    <a href="#"><img src="img/graphic-novel.jpg"/></a>
+                    <h3>Graphic novels</h3>
+                  </div>
+                  <div class="col-sm-3 resize">
+                    <a href="#"><img src="img/historical-fiction.jpg"/></a>
+                    <h3>Historical Fiction</h3>
+                  </div>
+                 </div>
+                 <div class="row">
+                     <div class="col-sm-3 resize"><img src="img/mystery.jpg"/></div>
+                     <div class="col-sm-3 resize"><img src="img/nonfiction.png"/></div>
+                     <div class="col-sm-3 resize"><img src="img/novel.jpg"/></div>
+                     <div class="col-sm-3 resize"><img src="img/poetry.jpg"/></div>
+                 </div>
+                 <div class="row">
+                     <div class="col-sm-3 resize"><img src="img/romance.jpg"/></div>
+                     <div class="col-sm-3 resize"><img src="img/science-fiction.jpg"/></div>
+                     <div class="col-sm-3 resize"><img src="img/texbook.png"/></div>
+                     <div class="col-sm-3 resize"><img src="img/Thriller.png"/></div>
+                 </div>
+                 
+           </div>
+         </div>
+       </div>
+       
+     <!--<div class="container">
+       <div class="row">
+         <div class="col-sm-3"></div>
+         <div class="col-sm-3"></div>
+         <div class="col-sm-3"></div>
+         <div class="col-sm-3"></div>
+       </div>
+       <div class="row">
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+       </div>
+       <div class="row">
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+       </div>
+       <div class="row">
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+           <div class="col-sm-3"></div>
+       </div>
+     </div> -->
+     
+   </body>
+ </html>
